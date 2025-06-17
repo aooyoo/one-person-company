@@ -11,7 +11,7 @@
 
 - ✅ 成本低 —— 尽可能免费或价格合理  
 - ✅ 技术现代 —— 支持现代 Web 开发工作流，应用DevOps  
-- ✅ 可迁移性强 —— 避免平台绑定，方便更换服务商
+- ✅ 可迁移性强 —— 避免平台绑定，方便更换同类服务商或迁移到自建服务器
 
 ---
 
@@ -56,10 +56,15 @@
 ### 🤖 AI 与工具服务
 
 - **大模型 API**：  
-  [OpenRouter](https://openrouter.ai) 或 [AITools](https://platform.aitools.cfd)
+  [OpenRouter](https://openrouter.ai)
+  [Google AI Studio](https://aistudio.google.com)
+  [AITools](https://platform.aitools.cfd)
+
+- **TTS API**：  
+  [ElevenLabs](https://elevenlabs.io/)
 
 - **搜索 API**：  
-  自建 [`duckduckgo-api`](https://github.com/deepcypher/duckduckgo-api)
+  自建 [duckduckgo-api](https://github.com/binjie09/duckduckgo-api)
 
 - **RSS API**：  
   自建 [RSSHub](https://github.com/DIYgod/RSSHub)
@@ -67,6 +72,7 @@
 ---
 
 ## 📌 架构示意图
+
 用户 –> Vercel (Next.js) –> Supabase (数据库) + Cloudflare R2 (资源)
 |
 +–> [可选]OpenRouter (AI API) / duckduckgo-api (搜索)
